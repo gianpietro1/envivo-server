@@ -1,3 +1,4 @@
+require("dotenv").config();
 //var fs = require('fs');
 //var https = require('https');
 var http = require("http");
@@ -6,14 +7,14 @@ var {
   RtcTokenBuilder,
   RtmTokenBuilder,
   RtcRole,
-  RtmRole
+  RtmRole,
 } = require("agora-access-token");
 
 var PORT = 8080;
 
 // Fill the appID and appCertificate key given by Agora.io
-var appID = "b2ddf1b171fb44f99eaf7548dbbc3d63";
-var appCertificate = "73e2b2fa5f8246a9a8a8f7a17ac25ebe";
+var appID = process.env.APP_ID;
+var appCertificate = process.env.APP_CERT;
 
 // token expire time, hardcode to 3600 seconds = 1 hour
 var expirationTimeInSeconds = 3600;
