@@ -7,14 +7,12 @@
   },
   "dependencies": {
     "agora-access-token": "^2.0.1",
-    "express": "3.4.8"
+    "express": "3.4.8",
+    "dotenv": "^8.2.0"
   },
   "main": "DemoServer.js",
   "author": "agora",
   "engines": {
     "node": "13.x"
-  },
-  "devDependencies": {
-    "dotenv": "^8.2.0"
   }
 }
