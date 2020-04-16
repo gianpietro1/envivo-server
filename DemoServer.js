@@ -10,7 +10,7 @@ var {
   RtmRole,
 } = require("agora-access-token");
 
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 
 // Fill the appID and appCertificate key given by Agora.io
 var appID = process.env.APP_ID;
