@@ -72,7 +72,12 @@ var generateRtmToken = function(req, resp) {
     privilegeExpiredTs
   );
 
-  resp.header("Access-Control-Allow-Origin", "*");
+  resp.header("Access-Control-Allow-Origin", "http://localhost:3000");
+  resp.header("Access-Control-Allow-Origin", "http://45.33.85.40:5000");
+  resp.header(
+    "Access-Control-Allow-Origin",
+    "https://https://envivo-client.herokuapp.com/"
+  );
   //resp.header("Access-Control-Allow-Origin", "http://ip:port")
   return resp.json({ key: key }).send();
 };
